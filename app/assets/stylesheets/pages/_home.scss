@@ -3,16 +3,18 @@
   padding-top: 90px;
 }
 
-.new-cocktail-btn {
-  background-color: #FFFCF9;
-  border-radius: 20px;
-  text-decoration: none;
-  color: #EC9DED;
-  padding: 12px 10px;
-  margin: 0 9px;
-}
-
-.new-cocktail-btn:hover {
+.fa-cocktail:hover {
   background-color: #EC9DED;
   color: white;
+}
+
+.fa-cocktail {
+  background-color: #FFFCF9;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #EC9DED;
+  padding: 10px;
+  margin: 0 9px;
+  text-align: center;
+  font-size: 22px;
 }
