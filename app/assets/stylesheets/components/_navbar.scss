@@ -1,6 +1,14 @@
 .navbar-lewagon {
+  display: flex;
   justify-content: space-between;
-  background: white;
+  background: #F9F7F3;
+  padding: 20px 0;
+}
+
+.navbar-lewagon h1 {
+  font-family: 'Dancing Script', cursive;
+  color: white;
+  margin: 0 7px;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -9,4 +17,13 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.new-cocktail-btn {
+  background-color: #BA051D;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  padding: 12px 10px;
+  margin: 0 9px;
 }

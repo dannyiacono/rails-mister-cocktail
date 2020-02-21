@@ -1,11 +1,17 @@
+<div class="navbar-lewagon" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://australianbartender.com.au/wp-content/uploads/2017/05/80s-drinks.jpg);">
+    <h1>Cocktails</h1>
+    <%= link_to "Create a new cocktail", new_cocktail_path, class: "new-cocktail-btn" %>
+</div>
+  <!-- div class="container-banner">
+  </div> -->
+
 <div class="container">
-  <h1>Cocktails#index</h1>
-  <div class="cocktails_list">
-    <% @cocktails.each do |cocktail| %>
-    <p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
-    <%  end %>
-    <hr>
-    <div id="new-cocktail-btn">
-      <%= link_to "Create a new cocktail", new_cocktail_path, class: "btn btn-primary" %>
+
+    <div class="cards">
+      <% @cocktails.each do |cocktail| %>
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://notablelife.com/media/2015/06/canada-day-cocktails.jpg)">
+          <p><%= link_to cocktail.name, cocktail_path(cocktail), class: "cocktail_card_link" %></p>
+        </div>
+        <%  end %>
     </div>
 </div>
