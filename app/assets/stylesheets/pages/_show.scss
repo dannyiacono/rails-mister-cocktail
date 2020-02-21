@@ -1,0 +1,22 @@
+.show {
+  border: 1px solid lightgrey;
+  margin-top: 60px;
+  padding: 40px;
+  box-shadow: 0 15px 35px rgba(126,87,88,.1), 0 5px 15px rgba(0,0,0,.07);
+  border-radius: 5px;
+  background-color: #FFFCF9;
+}
+
+.btn-primary {
+  color: white;
+}
+
+.btn-primart:hover {
+  background-color: white;
+  color: #EC9DED;
+}
+
+.cocktail-info {
+  display: flex;
+  justify-content: flex-end;
+}
