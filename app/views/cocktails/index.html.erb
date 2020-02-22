@@ -1,6 +1,13 @@
 <div class="navbar-lewagon fixed-top" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url();">
     <h1>Cocktails</h1>
-    <%= link_to "", new_cocktail_path, class: "fas fa-cocktail btn" %>
+    <!-- <div class="search"> -->
+      <%= form_tag(cocktails_path, :method => "get", class: "search-form") do %>
+        <%= text_field_tag :search, params[:search], placeholder: "Search Cocktails" %>
+        <%= submit_tag "Search", class: "search-btn" %>
+      <% end %>
+      <%= link_to "", new_cocktail_path, class: "fas fa-cocktail btn" %>
+    <!-- </div> -->
+
 </div>
 
 <div class="container home">

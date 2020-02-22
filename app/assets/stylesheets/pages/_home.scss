@@ -14,7 +14,24 @@
   text-decoration: none;
   color: #EC9DED;
   padding: 10px;
-  margin: 0 20px;
   text-align: center;
   font-size: 22px;
+  margin-right: 22px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search-btn, #search {
+  background-color: #FFFCF9;
+  color: #EC9DED;
+  border-radius: 18px;
+  padding: 6px 16px;
+}
+
+.search-btn:hover {
+  background-color: #EC9DED;
+  color: white;
 }
