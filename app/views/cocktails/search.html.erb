@@ -1,0 +1,18 @@
+<div class="container show">
+  <h1>Results</h1>
+  <div class="cards">
+    <% if @cocktails == [] %>
+      <p><%= "Sorry, we couldn't find a cocktail by that name." %></p>
+      <% else %>
+      <% @cocktails.each do |cocktail| %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path cocktail.photo.key, height: 300, width: 400, crop: :fill %>')">
+        <p><%= link_to cocktail.name, cocktail_path(cocktail), class: "cocktail_card_link" %></p>
+      </div>
+        <% end %>
+      <% end %>
+  </div>
+
+  <hr>
+  <p><%= link_to "Back to cocktails list", cocktails_path %></p>
+
+</div>

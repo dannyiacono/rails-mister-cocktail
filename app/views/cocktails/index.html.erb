@@ -1,7 +1,7 @@
 <div class="navbar-lewagon fixed-top" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url();">
     <h1>Cocktails</h1>
     <!-- <div class="search"> -->
-      <%= form_tag(cocktails_path, :method => "get", class: "search-form") do %>
+      <%= form_tag(cocktails_search_path, :method => "get", class: "search-form") do %>
         <%= text_field_tag :search, params[:search], placeholder: "Search Cocktails" %>
         <%= submit_tag "Search", class: "search-btn" %>
       <% end %>

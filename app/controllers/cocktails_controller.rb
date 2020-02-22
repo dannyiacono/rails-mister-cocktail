@@ -1,14 +1,18 @@
 class CocktailsController < ApplicationController
   before_action :set_cocktail, only: [:show]
   def index
-    if params[:search]
-      @cocktails = Cocktail.search(params[:search])
-    else
+    # if params[:search]
+    #   @cocktails = Cocktail.search(params[:search])
+    # else
       @cocktails = Cocktail.all
-    end
+    # end
   end
 
   def show
+  end
+
+  def search
+    @cocktails = Cocktail.search(params[:search])
   end
 
   def new
