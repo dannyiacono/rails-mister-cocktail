@@ -1,11 +1,8 @@
 class CocktailsController < ApplicationController
   before_action :set_cocktail, only: [:show]
+
   def index
-    # if params[:search]
-    #   @cocktails = Cocktail.search(params[:search])
-    # else
-      @cocktails = Cocktail.all
-    # end
+    @cocktails = Cocktail.all
   end
 
   def show
@@ -21,7 +18,7 @@ class CocktailsController < ApplicationController
 
   def create
     @cocktail = Cocktail.new(set_params)
-    if @cocktail.save
+    if @cocktail.photo.attached? && @cocktail.save
       redirect_to cocktail_path(@cocktail)
     else
       render :new
